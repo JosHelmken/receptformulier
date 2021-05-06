@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Upload jouw favoriete gerecht</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Css box model</h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>Recepten uploaden</h1>
+        <!-- Formulier om recepten te uploaden -->
+        <form name="recept" method="post" data-netlify="true">
+          <p>
+            <label>Naam: <input type="text" name="Name" /></label>
+          </p>
+          <p>
+            <label>Email: <input type="email" name="Email" /></label>
+          </p>
+          <p>
+            <label>Telefoonnummer: <input type="tel" name="Phone" /></label>
+          </p>
+          <p>
+            <label>Leeftijd: <input type="number" name="Age" /></label>
+          </p>
+          <p>
+            <label>Geboortedatum: <input type="date" name="Birthdate" /></label>
+          </p>
+          <p>
+            <input type="radio" name="Gender" value="Man" /><label>Man</label
+            ><input type="radio" name="Gender" value="Vrouw" /><label
+              >Vrouw</label
+            >
+          </p>
+          <p>
+            Favoriete cuisine:<br />
+            <label
+              ><input type="checkbox" name="Cuisine" value="Frans" />Frans
+            </label>
+            <label
+              ><input
+                type="checkbox"
+                name="Cuisine"
+                value="Itliaans"
+              />Italiaans
+            </label>
+            <label
+              ><input type="checkbox" name="Cuisine" value="Spaans" />Spaans
+            </label>
+            <label
+              ><input type="checkbox" name="Cuisine" value="Arabisch" />Arabisch
+            </label>
+          </p>
+          <p>
+            <label
+              >Favoriete kleur schort: <input type="color" name="Schort"
+            /></label>
+          </p>
+          <label
+            >Biografie:<br />
+            <textarea name="Biografie" rows="6" cols="50"></textarea>
+          </label>
+          <p>
+            <label
+              >Upload je recept:
+              <input type="file" name="Recept" />
+            </label>
+          </p>
+          <p>
+            <label
+              >Url naar website:
+              <input type="url" name="Website" />
+            </label>
+          </p>
+          <p>
+            <input type="submit" value="Formulier verzenden" />
+            <input type="reset" value="Formulier leeg maken" />
+          </p>
+        </form>
+      </main>
+      <footer>Copyright © 2021 Jos Helmken</footer>
+    </div>
+  </body>
+</html>
